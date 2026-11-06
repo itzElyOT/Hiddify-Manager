@@ -1,0 +1,40 @@
+# تنظیمات ربات مدیریت کانفیگ
+bot:
+  name: "Config Manager Bot"
+  version: "2.1.0"
+  admin_username: "b0G8XrS0PWP002f2edf8769761bb0dbf"
+  
+database:
+  path: "config_bot.db"
+  backup_interval: 3600  # ثانیه
+  
+channels:
+  check_interval: 300  # ثانیه برای بررسی عضویت
+  require_join: true
+  
+notifications:
+  new_config: true
+  new_tutorial: true
+  
+security:
+  max_file_size: 52428800  # 50MB
+  allowed_file_types:
+    - "image/*"
+    - "application/zip"
+    - "text/plain"
+    - "application/json"
+  
+logging:
+  level: "INFO"
+  file: "bot.log"
+  max_size: 10485760  # 10MB
+  backup_count: 5
+  
+ui:
+  date_format: "YYYY-MM-DD HH:mm:ss"
+  timezone: "Asia/Tehran"
+  
+features:
+  auto_delete_app_files: true
+  auto_delete_delay: 30  # ثانیه
+  broadcast_new_content: true
